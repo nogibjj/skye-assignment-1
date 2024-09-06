@@ -1,10 +1,38 @@
 [![Dotproduct](https://github.com/nogibjj/skye-assignment-1/actions/workflows/action.yml/badge.svg)](https://github.com/nogibjj/skye-assignment-1/actions/workflows/action.yml)
 
-# Project description
-    This project contains source code for "dot product" which calculates the dot product of two vectors.
-    usage : `python3 ./src/dotp.py` or make run
+# DotProduct Calculation
 
-    This project also includes unit tests for the dot product function, .devcontainer, Makefile
+This project computes the dot product of two vectors using a Python script. The project is integrated with GitHub Actions for continuous integration.
+
+## Usage
+
+To calculate the dot product of two vectors:
+
+```bash
+python3 dotp.py [vector_x] [vector_y]
+```
+
+Example:
+
+
+```bash
+python3 dotp.py [1,2,3] [4,5,6]
+```
+
+Output:
+
+```bash
+dot product result is 32.
+```
+
+## GitHub Actions Workflow
+
+The workflow is triggered on push, pull request, and manual events to the master branch. It performs the following steps:
+
+Setup: `make setup`
+Lint: `make lint`
+Test: `make test`
+Run: `make run`
 
 # Requirements
 
@@ -12,4 +40,3 @@
 - [x] devcontainer with devcontainer.json and Dockerfile
 - [x] Makefile with setup, test, and lint
 - [x] README.md with setup and usage instructions
-
